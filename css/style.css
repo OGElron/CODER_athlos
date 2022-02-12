@@ -45,7 +45,10 @@
     margin-top: 0%;
     text-align: center;
     align-self: center;
-    justify-self: center;    
+    justify-self: center;  
+  }
+  li a:hover {
+    background-color: rgb(27, 138, 230);
   }
 
   section {
@@ -101,12 +104,7 @@
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0, 0,.6);
     border-radius: 10px;
-    align-self: center;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    transform: translate(-50%, 50%);
-    margin-left: 50%;
+    margin-left: 30%;
     margin-top: 2%;
 }
     
@@ -119,6 +117,10 @@
   width: 24.375em;
   padding: 5px;
   object-fit: cover;
+}
+.foto_shop:hover {
+  transition: 2s;
+  transform: scale(1.3,1.3)
 }
   
   aside {
@@ -134,6 +136,7 @@
     justify-content: space-between;
 } 
   section#tienda_grid {
+    margin: 1.85rem;
     display: grid;
     grid-template-columns: 1fr repeat(4);
     grid-template-rows: 1fr repeat(3);
