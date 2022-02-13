@@ -17,32 +17,16 @@
     "footer";
     background-image: linear-gradient(to bottom, rgb(0, 0, 80), rgb(0, 0, 0));
 }
-  header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 0.2fr 1fr;
-    grid-template-areas: "box_icon" "menu";  
+#main_mod {
+  background-image: linear-gradient(to bottom, rgb(0, 0, 80), rgb(0, 0, 0));
 }
-
-  .box_icon {
-  width: 8rem ;
-  height: 8rem;
-  display: inline;
-  justify-content: flex-start;
-  }
-
-  .menu, li {
+  
+  .menu, li, nav {
     display: inline;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: rgb(0, 0, 80);
-    border-color: #ffffff;
-    box-sizing: content-box;
-    border-radius: 10px;
-    background: rgb(255, 255, 255);
-    padding: 2px 0px 2px 0px;
-    margin-bottom: 1.25rem;
-    margin-top: 0%;
+   
     text-align: center;
     align-self: center;
     justify-self: center;  
