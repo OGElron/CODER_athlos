@@ -1,0 +1,14 @@
+$font-family: 'Open Sans';
+#main_mod {
+    background-color: rgb(0,0,80);
+    .texto {
+        font: $font-family;
+        color: rgb(210, 235, 252);
+        .titulo {
+            color: rgb(100, 159, 236);}
+        .subtitulo {
+            color: rgb(172, 143, 51);
+        }
+    
+    }
+}

@@ -1,0 +1,17 @@
+#main_mod {
+  background-color: #000050;
+}
+
+#main_mod .texto {
+  font: "Open Sans";
+  color: #d2ebfc;
+}
+
+#main_mod .texto .titulo {
+  color: #649fec;
+}
+
+#main_mod .texto .subtitulo {
+  color: #ac8f33;
+}
+/*# sourceMappingURL=styles.css.map */
