@@ -1,0 +1,172 @@
+$fondos: (fondo_pagina: #000050,fondo_menu:#0887f1,fondo_container: #0c0c5c,fondo_tarjeta: #4b89bd,fondo_tabla: #41414b);
+$fuentes: (fuente_principal:#000000, fuente_alt: #fff,fuente_titulos: #0887f0, fuente_subtitulos: #0e7cbb, fuente_esp: #f79400);
+
+$boton_1: #4a08e2;
+$boton_2: #db511a;
+
+#main {
+    display: grid;
+    margin:auto;
+    min-height: 100vh;
+    max-width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15%
+    10%
+    1fr
+    1fr
+    10%;
+    grid-template-areas: 
+    "header" 
+    "section" 
+    "aside" 
+    "footer"}
+
+menu, li, nav {
+    display: inline;
+    color: map-get($fuentes, fuente_alt);
+    background-color: map-get($fondos, fondo_menu);
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+.icon_menu {
+    display: inline;
+    width: 3rem;
+    height: 3rem;
+}
+li:hover {
+    background-color: #fff;
+}
+h1 {
+ color: map-get($fuentes, fuente_titulos);
+}
+h3 {
+    color: map-get($fuentes, fuente_alt);
+}
+.h4 { 
+    color: map-get($fuentes, fuente_alt);
+}
+h5 {
+    color: map-get($fuentes, fuente_principal)
+}
+
+
+#mi_tiendita {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0,0,80);
+        .tiendita {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+            .container {
+                border: none;
+            }
+    }
+}
+.col {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.4s;
+    background-color: map-get($fondos, fondo_tarjeta );
+    &:hover {
+        box-shadow: 0 3px 6px  (0,0,0,0.16), 0 3px 6px rgba (0,0,0,0.23);
+        transform: scale( 2 2);}
+} 
+
+
+
+img {
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px
+}
+
+@mixin border {
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 20px;
+}
+
+button {
+    text-align: center;
+    font-size: 1.5rem;
+    color: map-get($fuentes, fuente_esp);
+    font-weight: 600;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 20px;
+    @include border;
+    background-color: $boton_1;
+    &:hover {
+    background-color: $boton_2   }
+/*desktop large*/
+@media only screen and (max-width: 1200px) {
+    #main {
+      font-size: 14px;
+  }
+  .col {
+    width: 45%;
+}
+    }
+  /*tablet*/
+@media only screen and (max-width: 768px) {
+    #main {
+      font-size: 12px;
+  }
+  .col {
+        width: 60%;
+    }
+    }
+  /*mobile*/
+@media only screen and (max-width: 576px) {
+    #main {
+      font-size: 10px;
+    }
+    .col {
+        width: 100%;
+    }
+  }
+}
+$grid-columns:      12;
+$grid-gutter-width: 1.5rem;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+@mixin name {
+    
+}
+.oferta { 
+    @extend .h4;
+    color:#02105c;
+    background-color: #db511a;
+    border-radius: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.btn_compra {
+    @include border;
+    
+} 
+
