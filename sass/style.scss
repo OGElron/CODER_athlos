@@ -1,9 +1,21 @@
-$fondos: (fondo_pagina: #000050,fondo_menu:#0887f1,fondo_container: #0c0c5c,fondo_tarjeta: #4b89bd,fondo_tabla: #41414b);
-$fuentes: (fuente_principal:#000000, fuente_alt: #fff,fuente_titulos: #0887f0, fuente_subtitulos: #0e7cbb, fuente_esp: #f79400);
+@import "_variables";
 
-$boton_1: #4a08e2;
-$boton_2: #db511a;
 
+footer { 
+    grid-area: footer;
+  }
+  
+  table { 
+    grid-area: section;
+  }
+  
+  aside { 
+    grid-area: aside;
+  }
+  
+  header { 
+    grid-area: header;
+  } 
 #main {
     display: grid;
     margin:auto;
@@ -19,8 +31,8 @@ $boton_2: #db511a;
     "header" 
     "section" 
     "aside" 
-    "footer"}
-
+    "footer"
+}
 menu, li, nav {
     display: inline;
     color: map-get($fuentes, fuente_alt);
@@ -30,11 +42,7 @@ menu, li, nav {
     align-self: center;
     justify-self: center;
 }
-.icon_menu {
-    display: inline;
-    width: 3rem;
-    height: 3rem;
-}
+
 li:hover {
     background-color: #fff;
 }
@@ -50,8 +58,6 @@ h3 {
 h5 {
     color: map-get($fuentes, fuente_principal)
 }
-
-
 #mi_tiendita {
     margin: 0;
     padding: 0;
@@ -66,7 +72,7 @@ h5 {
                 border: none;
             }
     }
-}
+
 .col {
     width: 20%;
     margin: 15px;
@@ -81,12 +87,11 @@ h5 {
     background-color: map-get($fondos, fondo_tarjeta );
     &:hover {
         box-shadow: 0 3px 6px  (0,0,0,0.16), 0 3px 6px rgba (0,0,0,0.23);
-        transform: scale( 2 2);}
+        transition: 2s;
+        transform: scale( 1.1, 1.1);}
 } 
-
-
-
-img {
+}
+.tien_img {
     width: 200px;
     height: 300px;
     text-align: center;
@@ -117,6 +122,19 @@ button {
     background-color: $boton_1;
     &:hover {
     background-color: $boton_2   }
+}
+footer, #pie {
+        position: absolute;
+        bottom: 0;
+        justify-content: space-between;
+    } 
+
+#main_mod {
+    @include fondo;
+}
+.texto {
+    background-color: white;
+}
 /*desktop large*/
 @media only screen and (max-width: 1200px) {
     #main {
@@ -144,7 +162,7 @@ button {
         width: 100%;
     }
   }
-}
+
 $grid-columns:      12;
 $grid-gutter-width: 1.5rem;
 $grid-breakpoints: (
@@ -155,7 +173,8 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px
 );
-@mixin name {
+@mixin border {
+    border: 2px solid black
     
 }
 .oferta { 
@@ -167,6 +186,76 @@ $grid-breakpoints: (
 }
 .btn_compra {
     @include border;
+}
+.icon_menu {
+    display: inline;
+    width: 3rem;
+    height: 3rem;}
+.nosotrosss{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.616);
+    .texto { 
+        margin: 50px;
+        padding: 20px;
+        width: 50%;
+        .cuadro { 
+            background-color: rgba(128, 128, 128, 0.534);
+            border: 1px solid black;
+            padding: 20px;
+            margin: 50px;}
+        }
+    .imagen2{
+            padding: 10px;
+            padding-top: 50px;
+            margin-top: 150px;
+            width: 40%;
+            height: 600px;
+            background-image: url(../img/nos2.jpg);
+            }    
+}
+.caja_de_comentarios {
+    width: 400px;
+    padding: 40px 40px;
+    background: rgb(0, 0, 80);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0, 0,.6);
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 2%;
+}
     
-} 
-
+  .titulocaja {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+}
+/* formulario#formu {   
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.625em;
+    margin: 1.25em;
+    background-color: map-get($fondos, fondo_tarjeta);
+    #name_formu { 
+        background-color: rgb(255, 255, 255);
+        text-align: center;}
+    .aviso_name { 
+        font-size: 0.88em;}
+    #aviso { 
+        margin: 0.3125em;}
+    .botonformu { 
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+        background-color: map-get($fondos,fondo_container);
+        margin: 5px;
+        padding: 5px;
+        &:hover{
+            background-color: rgba(122, 122, 122, 0.527);
+            border-bottom: 2px solid black;}
+        &:active { 
+            background-color: grey;}
+       }
+    }
+    */

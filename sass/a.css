@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,300;0,600;1,300;1,600&display=swap");
+#main {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  min-height: 100vh;
+  max-width: 100%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 15% 10% 1fr 1fr 10%;
+      grid-template-rows: 15% 10% 1fr 1fr 10%;
+      grid-template-areas: "header"  "section .tabla"  "aside .noticias"  "footer";
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000050), to(black));
+  background-image: linear-gradient(to bottom, #000050, black);
+}
+
+#main_mod {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000050), to(black)) !important;
+  background-image: linear-gradient(to bottom, #000050, black) !important;
+}
+
+.menu, li, nav {
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #000050;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+li a:hover {
+  background-color: #1b8ae6;
+}
+
+section {
+  grid-area: tabla;
+  background-color: #282853;
+}
+
+.fixture {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #3c91d6;
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+.titulo {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  color: #3c91d6;
+}
+
+.titular {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  font-style: bold;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+
+.subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.subtitulo_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #efeef7;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  background: #000050;
+}
+
+.parrafo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+section#contactoz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.caja_de_comentarios {
+  width: 400px;
+  padding: 40px 40px;
+  background: #000050;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-top: 2%;
+}
+
+.titulocaja {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.foto_shop {
+  height: 30em;
+  width: 24.375em;
+  padding: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.foto_shop:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+aside {
+  grid-area: noticias;
+  width: 100%;
+  height: 37.5rem;
+}
+
+footer #pie {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#tienda_grid {
+  margin: 1.85rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr ()[4];
+      grid-template-columns: 1fr repeat(4);
+  -ms-grid-rows: 1fr ()[3];
+      grid-template-rows: 1fr repeat(3);
+  /* grid-area: 
+    "item" "item" "item"
+    "item" "item" "item"
+    "item" "item" "item"
+    "item" "item" "item";*/
+}
+
+/*desktop large*/
+@media only screen and (max-width: 1200px) {
+  #main {
+    font-size: 14px;
+  }
+}
+
+/*tablet*/
+@media only screen and (max-width: 768px) {
+  #main {
+    font-size: 12px;
+  }
+}
+
+/*mobile*/
+@media only screen and (max-width: 576px) {
+  #main {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=a.css.map */

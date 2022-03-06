@@ -12,13 +12,13 @@
     10%;
     grid-template-areas: 
     "header" 
-    "section" 
-    "aside" 
+    "section .tabla" 
+    "aside .noticias" 
     "footer";
     background-image: linear-gradient(to bottom, rgb(0, 0, 80), rgb(0, 0, 0));
 }
 #main_mod {
-  background-image: linear-gradient(to bottom, rgb(0, 0, 80), rgb(0, 0, 0));
+  background-image: linear-gradient(to bottom, rgb(0, 0, 80), rgb(0, 0, 0))!important;
 }
   
   .menu, li, nav {
@@ -131,11 +131,11 @@
     display: grid;
     grid-template-columns: 1fr repeat(4);
     grid-template-rows: 1fr repeat(3);
-    grid-area: 
+   /* grid-area: 
     "item" "item" "item"
     "item" "item" "item"
     "item" "item" "item"
-    "item" "item" "item";
+    "item" "item" "item";*/
 }
 
 /*desktop large*/
