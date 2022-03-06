@@ -63,6 +63,7 @@ h5 {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(0,0,80);
+    @include fondo;
         .tiendita {
             width: 100%;
             justify-content: center;
@@ -124,9 +125,10 @@ button {
     background-color: $boton_2   }
 }
 footer, #pie {
-        position: absolute;
+        position: sticky;
         bottom: 0;
         justify-content: space-between;
+        float: right
     } 
 
 #main_mod {
@@ -140,10 +142,7 @@ footer, #pie {
     #main {
       font-size: 14px;
   }
-  .col {
-    width: 45%;
 }
-    }
   /*tablet*/
 @media only screen and (max-width: 768px) {
     #main {
@@ -152,7 +151,26 @@ footer, #pie {
   .col {
         width: 60%;
     }
+    .robot {
+        display: none;
     }
+    #main_index {
+        display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+    .video {
+            grid-area: 1/1/2/2;
+        width: 100%;}
+    .notadeldia {
+            grid-area: 2/1/3/2;
+        width: 100%;}
+    .notadeldia2 {
+            grid-area: 3/1/4/2;
+        width: 100%;}
+    }
+}
   /*mobile*/
 @media only screen and (max-width: 576px) {
     #main {
@@ -161,18 +179,10 @@ footer, #pie {
     .col {
         width: 100%;
     }
+    .robot {
+        display: none;
+    }
   }
-
-$grid-columns:      12;
-$grid-gutter-width: 1.5rem;
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
 @mixin border {
     border: 2px solid black
     
@@ -213,49 +223,91 @@ $grid-breakpoints: (
             background-image: url(../img/nos2.jpg);
             }    
 }
+.coments{
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 1;
+    justify-content: space-around;
+    align-items: center;
+
+}
 .caja_de_comentarios {
-    width: 400px;
-    padding: 40px 40px;
-    background: rgb(0, 0, 80);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0, 0,.6);
-    border-radius: 10px;
-    margin-left: 30%;
-    margin-top: 2%;
+    background-color: map-get($fondos, fondo_container);
+    margin: 40px 40px;
+    padding: 30px;
+    width: 400px;
+    grid-area: 1/1/2/3;
+    #name_formu{
+        color: map-get($fuentes, fuente_alt );
+    .boton_enviar {
+        color: map-get($fuentes, fuente_subtitulos );
+        background-color: $boton_1;
+        border-radius: 20px;
+    }
+    }
+}
+.robot {
+    grid-area: 1/2/2/3;
 }
     
   .titulocaja {
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
 }
-/* formulario#formu {   
-    width: 20em;
-    height: 20em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.625em;
-    margin: 1.25em;
-    background-color: map-get($fondos, fondo_tarjeta);
-    #name_formu { 
-        background-color: rgb(255, 255, 255);
-        text-align: center;}
-    .aviso_name { 
-        font-size: 0.88em;}
-    #aviso { 
-        margin: 0.3125em;}
-    .botonformu { 
-        border: 1px solid black;
-        border-radius: 10px;
-        text-align: center;
-        background-color: map-get($fondos,fondo_container);
-        margin: 5px;
-        padding: 5px;
-        &:hover{
-            background-color: rgba(122, 122, 122, 0.527);
-            border-bottom: 2px solid black;}
-        &:active { 
-            background-color: grey;}
-       }
+#acad_conta {
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.acad_info {
+    grid-area: acad_info;
+    box-sizing:border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.22);
+    background-color:map-get($fondos, fondo_caja );
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    width: 630px;
+}
+.sub_ac {
+    color: map-get($fuentes, fuente_alt );
+}
+.video {
+    grid-area: video;
+    box-sizing:border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.22);
+    background-color:map-get($fondos, fondo_caja );
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    grid-area: 1 / 1 / 3 / 3; 
+}
+.notadeldia {
+    grid-area: notadeldia;
+    box-sizing:border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.22);
+    background-color:map-get($fondos, fondo_caja );
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    grid-area: 1 / 3 / 2 / 4;
+}
+.notadeldia2 {
+    grid-area: notadeldia;
+    box-sizing:border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.22);
+    background-color:map-get($fondos, fondo_caja );
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    grid-area: 2 / 3 / 3 / 4;
+}
+#main_index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 0px;
+    justify-content: space-around;
     }
-    */
