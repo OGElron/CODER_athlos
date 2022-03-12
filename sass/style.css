@@ -151,13 +151,8 @@ button:hover {
 }
 
 footer, #pie {
-  position: -webkit-sticky;
-  position: sticky;
   bottom: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  float: right;
+  background-color: #dadada;
 }
 
 #main_mod {
@@ -173,6 +168,11 @@ footer, #pie {
 @media only screen and (max-width: 1200px) {
   #main {
     font-size: 14px;
+  }
+  footer, #pie {
+    width: 100%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
@@ -293,30 +293,6 @@ footer, #pie {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-/*.caja_de_comentarios {
-    box-sizing: border-box;
-    background-color: map-get($fondos, fondo_container);
-    margin: 40px 40px;
-    padding: 30px;
-    width: 400px;
-    grid-area: 1/1/2/3;
-    #name_formu{
-        color: map-get($fuentes, fuente_alt );
-    .boton_enviar {
-        color: map-get($fuentes, fuente_subtitulos );
-        background-color: $boton_1;
-        border-radius: 20px;
-    }
-    }
-} */
-.robot {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1/2/2/3;
 }
 
 .titulocaja {
@@ -446,8 +422,13 @@ form {
   background-color: #dadada;
   padding: 30px;
   border-radius: 20px;
-  margin-top: 5em;
-  margin-left: 5em;
+  margin: 5em;
+}
+
+.caja_de_comentarios h2, .caja_de_comentarios .mensaje {
+  text-align: center;
+  color: #02105c;
+  text-shadow: 2px 2px #fff;
 }
 
 .feedback-input {

@@ -123,10 +123,8 @@ button {
     background-color: $boton_2   }
 }
 footer, #pie {
-        position: sticky;
         bottom: 0;
-        justify-content: space-between;
-        float: right
+        background-color: map-get($fondos, fondo_caja )
     } 
 
 #main_mod {
@@ -139,6 +137,10 @@ footer, #pie {
 @media only screen and (max-width: 1200px) {
     #main {
       font-size: 14px;
+  }
+    footer, #pie {
+        width: 100%;
+        align-self: flex-start;
   }
 }
   /*tablet*/
@@ -228,26 +230,6 @@ grid-row-gap: 0px;
     align-items: center;
 
 }
-/*.caja_de_comentarios {
-    box-sizing: border-box;
-    background-color: map-get($fondos, fondo_container);
-    margin: 40px 40px;
-    padding: 30px;
-    width: 400px;
-    grid-area: 1/1/2/3;
-    #name_formu{
-        color: map-get($fuentes, fuente_alt );
-    .boton_enviar {
-        color: map-get($fuentes, fuente_subtitulos );
-        background-color: $boton_1;
-        border-radius: 20px;
-    }
-    }
-} */
-.robot {
-    grid-area: 1/2/2/3;
-}
-    
   .titulocaja {
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
@@ -320,12 +302,17 @@ grid-row-gap: 0px;
     }
     body { background:rgb(30,30,40); }
     form { max-width:420px; margin:50px auto; }
-    .caja_de_comentarios {
+   
+ .caja_de_comentarios {
         background-color: map-get($fondos, fondo_caja);
         padding: 30px;
         border-radius: 20px;
-        margin-top: 5em;
-        margin-left: 5em;
+        margin: 5em;
+        h2, .mensaje {
+            text-align: center;
+            color: #02105c;
+            text-shadow: 2px 2px #fff;
+        }
     }
     .feedback-input {
       color:white;
