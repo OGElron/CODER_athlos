@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo -->
   <title>Athlos Tu sitio de esports</title>
+  <!-- SEO -->
   <meta name="description" content="Athlos es el primer sitio especializado de esports en Argentina. Encontrá noticias, analisis y entrevistas a profesionales de los esports">
   <meta name="keywords" content="esports, argentina, español, deportes electronicos, videojuegos, lol, csgo, fifa, overwatch">
+  <!-- icono -->
   <link rel="shortcut icon" href="img/webicon - copia.png">
+  <!-- style -->
   <link rel="stylesheet" href="sass/style.css">
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body id="main_mod">
-  <header .col-12 class=container-fluid>
+<body class="mefetreque">
+  <!-- menu de navegacion -->
+  <header .col-12 class=container-fluid> 
     <nav class="navbar navbar-expand-sm style: navbar-light bg-primary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"></a>
@@ -40,12 +45,11 @@
             <li class="nav-item">
               <a class="nav-link" href="html/contacto.html">Contacto</a>
           </ul>
-
         </div>
       </div>
     </nav>
-    </div>
   </header>
+  <!-- tabla / marcador -->
   <div .col-12 class=container-fluid>
     <table class="table table-dark table-sm">
       <tr>
@@ -75,22 +79,42 @@
       </tr>
     </table>
   </div>
-  <aside id="main_index" class=container-fluid>
-    <div class="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/i58Tr85wJQE" title="YouTube video player"
+  <!-- main home -->
+  <article id="main_index" class=container-fluid>
+    <!-- video principal -->
+    <section class="video">
+      <h2>Transmisión de esports</h2>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/i58Tr85wJQE" title="YouTube video player"
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe></div>
-    <div class="notadeldia">
-      <h2>Relanzamiento de athlos</h2>
-      <img class=fotodeldia src="img/cabecera.jpg" width="200px" height="200px">
-      <h6>Se relanza el sitio de athlos para este 2022. Ahora con más contenido, más entrevistas, más información.</h6>
-    </div>
-    <div class="notadeldia2">
-      <h2>KRU vuelve a ganar</h2>
-      <img class=fotodeldia src="img/nos1.png" width="200px" height="200px">
-      <h6>KRU esports vuelve al ruedo ganando en Valorant y se perfila para clasificarse de nuevo para el Masters</h6>
-    </div>
-  </aside>
+      allowfullscreen></iframe>
+    </section>
+    <!-- nota 1 -->
+    <section class="notadeldia">
+      <h1>Relanzamiento de athlos</h1>
+      <div class="card">
+        <img class=fotodeldia src="img/cabecera.jpg" width="200px" height="300px">
+        <h6>Se relanza el sitio de athlos para este 2022. Ahora con más contenido, más entrevistas, más información. De ahora en más vas a poder disfrutar del mejor contenido en nuestra página y redes sociales.
+          Encontra todo lo referido a esports en tu sitio, en tu idioma. 
+        </h6>
+        <button class="segui"> Segui Leyendo</button>
+        
+      </div>
+    </section>
+    <!-- nota 2 -->
+    <section class="notadeldia2">
+      <h1>KRU vuelve a ganar</h1>
+      <div class="card">
+        <img class=fotodeldia src="img/nos1.png" width="200px" height="280px">
+        <h6>KRU esports vuelve al ruedo ganando en Valorant y se perfila para clasificarse de nuevo para el Masters.
+          Tras el triunfo del equipo del Kun Aguero frente al equipo mexicano Infinity los jugadores se preparana para viaja a Europa.
+        </h6>
+        <button class="segui"> Segui Leyendo</button>
+      </div>
+    </section>
+  </article>
+  <!-- pie de pagina -->
   <footer id="pie">
+    <!-- redes sociales -->
     <div style="background-color: rgb(0, 0, 80);">
         <div class="container">
             <div class="row py-4 d-flex align-items-center">
@@ -115,12 +139,14 @@
     </div>
     <div class="container text-center text-md-left mt-5">
         <div class="row mt-3">
+            <!-- athlos -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 class="text-uppercase font-weight-bold">ATHLOS</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>Athlos.ar es una organización sin afiliación con ninguna liga, equipo o publisher de videjuegos. Las notas son propiedad intelectual de sus autores
                 </p>
             </div>
+            <!-- links del sitio -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase font-weight-bold">Links del Sitio</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -137,6 +163,7 @@
                     <a href="html/nosotros.html">Nosotros</a>
                 </p>
             </div>
+            <!-- contacto -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 class="text-uppercase font-weight-bold">contacto</h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
@@ -147,11 +174,13 @@
             </div>
         </div>
     </div>
+    <!-- firma -->
     <div class="footer-copyright text-center py-3">© 2022 Copyright:
         <a href="https://www.linkedin.com/in/ivan-dar%C3%ADo-niello/?locale=es_ES" target="_blank">Niello
             Designs</a>
     </div>
-</footer>
+  </footer>
+  <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
