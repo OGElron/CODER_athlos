@@ -15,4 +15,51 @@ $boton_2: #db511a;
     border-radius: 20px;
 }
 
+@mixin productos {
+    border: solid black 2px;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 20px;
+    background-color: map-get($fondos, fondo_caja);
+    &:hover {
+        transition: 2s;
+        transform: scale( 1.1, 1.1);}
+    //  .tien_img {
+    //      width: 200px;
+    //      height: 300px;
+    // //     max-width: 100%;
+    // //     max-height: 90%;
+    // //     text-align: center;
+    // //     margin: 0 auto;
+    // //     display: block;
+    // //     border-radius: 20px
+    // }
+    .oferta { 
+        color:#02105c;
+        background-color: #db511a;
+        border-radius: 90px;
+        font-family: sans-serif;
+    }
+    .btn_compra {
+        @include border;
+        text-align: center;
+        font-size: 1.5rem;
+        color: map-get($fuentes, fuente_esp);
+        font-weight: 600;
+        width: 100%;
+        padding: 15px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        margin-top: 5px;
+        border-radius: 20px;
+        background-color: $boton_1;
+        &:hover {
+        background-color: $boton_2}
+    }
+}
 

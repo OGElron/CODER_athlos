@@ -133,25 +133,25 @@ nav{
 
 .titulo_caja {
     background-color: map-get($fondos, fondo_caja);
-    border-radius: 50px;
+    border-radius: 30px;
     margin: 25px;
     padding: 20px;
     border: solid black 2px;
     .titulo{
         text-align: center;
-        text-shadow: 3px 3px 2px rgb(122, 122, 122);
-        color: rgb(0, 0, 0);
+        text-shadow: 3px 3px 1px rgb(51, 50, 50);
+        color: map-get($fuentes, fuente_titulos );
+        font-weight: 700;
     }
     .sub_ac {
         text-align: center;
-        font-style: italic;
-        // color: map-get($fuentes, fuente_alt );
+        font-style: normal;
+        color: map-get($fuentes, fuente_principal);
     }
 }
 #acad_conta {
-    
     display: flex;
-    flex-wrap: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     .acad_info {
@@ -178,59 +178,43 @@ nav{
     justify-content: center;
     align-items: center;
     margin: 50px 0;
-    .container {
-        border: none;
-        .col {
-            border: solid black 2px;
-            width: 20%;
-            margin: 15px;
-            box-sizing: border-box;
-            float: left;
-            text-align: center;
-            border-radius: 20px;
-            cursor: pointer;
-            padding: 20px;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-            transition: 0.4s;
-            background-color: map-get($fondos, fondo_caja);
-            &:hover {
-                box-shadow: 0 3px 6px  (0,0,0,0.16), 0 3px 6px rgba (0,0,0,0.23);
-                transition: 2s;
-                transform: scale( 1.1, 1.1);}
-            .tien_img {
-                max-width: 100%;
-                max-height: 90%;
-                text-align: center;
-                margin: 0 auto;
-                display: block;
-                border-radius: 20px
-            }
-            .oferta { 
-                color:#02105c;
-                background-color: #db511a;
-                border-radius: 90px;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            }
-            .btn_compra {
-                @include border;
-                text-align: center;
-                font-size: 1.5rem;
-                color: map-get($fuentes, fuente_esp);
-                font-weight: 600;
-                width: 100%;
-                padding: 15px;
-                border: 0;
-                outline: none;
-                cursor: pointer;
-                margin-top: 5px;
-                border-radius: 20px;
-                background-color: $boton_1;
-                &:hover {
-                background-color: $boton_2}
-            }
+        .col1{
+            @include productos
+        }  
+        .col2 {
+            @include productos
         }
-    }
-}
+        .col3 {
+            @include productos
+        }
+        .col4 {
+            @include productos
+        }
+        .col5 {
+            @include productos
+        }
+        .col6 {
+            @include productos
+        }
+        .col7 {
+            @include productos
+        }
+        .col8 {
+            @include productos
+        }
+        .col9 {
+            @include productos
+        }
+        .col10 {
+            @include productos
+        }
+        .col11 {
+            @include productos
+        }
+        .col12 {
+            @include productos
+        }  }
+
 
 // NOSOTROS
 
@@ -331,9 +315,12 @@ nav{
 // MEDIA QUERIES
 @media screen and (min-width: 200px) and (max-width:767px) {
 
-.mequetrefe {
-    padding: 5px;
-    }
+* {
+    margin: 1px;
+}
+nav {
+    margin-left: 0px;
+}
 #main_index {
     display:flex;
     flex-wrap: wrap;
@@ -360,6 +347,26 @@ nav{
     height: 30%;
     }
 }
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 3 / 1 / 4 / 2; }
+    .div4 { grid-area: 4 / 1 / 5 / 2; }
+    .div5 { grid-area: 5 / 1 / 6 / 2; }
+    .div6 { grid-area: 6 / 1 / 7 / 2; }
+    .div7 { grid-area: 7 / 1 / 8 / 2; }
+    .div8 { grid-area: 8 / 1 / 9 / 2; }
+    .div9 { grid-area: 9 / 1 / 10 / 2; }
+    .div10 { grid-area: 10 / 1 / 11 / 2; }
+    .div11 { grid-area: 11 / 1 / 12 / 2; }
+    .div12 { grid-area: 12 / 1 / 13 / 2; }
 }
 @media screen and (min-width: 768px) and (max-width:1200px) {
 .mequetrefe {
@@ -375,4 +382,48 @@ nav{
     width: 768px !important;
     height: 500px;
     }
-}     
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 2 / 1 / 3 / 2; }
+        .div4 { grid-area: 2 / 2 / 3 / 3; }
+        .div5 { grid-area: 3 / 1 / 4 / 2; }
+        .div6 { grid-area: 3 / 2 / 4 / 3; }
+        .div7 { grid-area: 4 / 1 / 5 / 2; }
+        .div8 { grid-area: 4 / 2 / 5 / 3; }
+        .div9 { grid-area: 5 / 1 / 6 / 2; }
+        .div10 { grid-area: 5 / 2 / 6 / 3; }
+        .div11 { grid-area: 6 / 1 / 7 / 2; }
+        .div12 { grid-area: 6 / 2 / 7 / 3; }
+        
+        
+}
+@media screen and (min-width: 1200px) and (max-width: 4000px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 0px;
+        }
+        
+    .col1 { grid-area: 1 / 1 / 2 / 2; }
+    .col2 { grid-area: 1 / 2 / 2 / 3; }
+    .col3 { grid-area: 1 / 3 / 2 / 4; }
+    .col4 { grid-area: 1 / 4 / 2 / 5; }
+    .col5 { grid-area: 2 / 1 / 3 / 2; }
+    .col6 { grid-area: 2 / 2 / 3 / 3; }
+    .col7 { grid-area: 2 / 3 / 3 / 4; }
+    .col8 { grid-area: 2 / 4 / 3 / 5; }
+    .col9 { grid-area: 3 / 1 / 4 / 2; }
+    .col10 { grid-area: 3 / 2 / 4 / 3; }
+    .col11 { grid-area: 3 / 3 / 4 / 4; }
+    .col12 { grid-area: 3 / 4 / 4 / 5; }
+}
