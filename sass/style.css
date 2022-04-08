@@ -197,10 +197,10 @@ nav ul li a {
 }
 
 .tiendita {
-  width: 100%;
+  width: 90%;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 50px;
 }
 
 .tiendita .col1 {
@@ -757,7 +757,6 @@ nav ul li a {
 
 .nosotrosss {
   display: flex;
-  width: 100%;
 }
 
 .nosotrosss .texto {
@@ -793,10 +792,10 @@ nav ul li a {
   border: solid black 2px;
   display: flex;
   flex-direction: column;
-  width: 570px;
-  height: 650px;
+  width: 36.625rem;
+  height: 40.625rem;
   background-color: #dadada;
-  padding: 30px;
+  padding: 1.9rem;
   border-radius: 20px;
   margin: 5em;
 }
@@ -808,8 +807,8 @@ nav ul li a {
 }
 
 .mefetreque .caja_de_comentarios .formulario {
-  width: 500px;
-  height: 500px;
+  width: 31.25rem;
+  height: 31.25rem;
 }
 
 .mefetreque .caja_de_comentarios .formulario .feedback-input {
@@ -827,7 +826,7 @@ nav ul li a {
   width: 100%;
   box-sizing: border-box;
   outline: 0;
-  height: 150px;
+  height: 9.375rem;
   line-height: 150%;
   resize: vertical;
 }
@@ -885,47 +884,47 @@ nav ul li a {
     width: 30%;
     height: 30%;
   }
-  .container {
+  .mi_tiendita {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .div1 {
+  .col1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  .div2 {
+  .col2 {
     grid-area: 2 / 1 / 3 / 2;
   }
-  .div3 {
+  .col3 {
     grid-area: 3 / 1 / 4 / 2;
   }
-  .div4 {
+  .col4 {
     grid-area: 4 / 1 / 5 / 2;
   }
-  .div5 {
+  .col5 {
     grid-area: 5 / 1 / 6 / 2;
   }
-  .div6 {
+  .col6 {
     grid-area: 6 / 1 / 7 / 2;
   }
-  .div7 {
+  .col7 {
     grid-area: 7 / 1 / 8 / 2;
   }
-  .div8 {
+  .col8 {
     grid-area: 8 / 1 / 9 / 2;
   }
-  .div9 {
+  .col9 {
     grid-area: 9 / 1 / 10 / 2;
   }
-  .div10 {
+  .col10 {
     grid-area: 10 / 1 / 11 / 2;
   }
-  .div11 {
+  .col11 {
     grid-area: 11 / 1 / 12 / 2;
   }
-  .div12 {
+  .col12 {
     grid-area: 12 / 1 / 13 / 2;
   }
 }
@@ -935,10 +934,25 @@ nav ul li a {
   height: 300px;
 }
 
+.nosotrosss {
+  display: flex;
+  width: 100%;
+}
+
+.nosotrosss .texto {
+  width: 100%;
+  margin: 3%;
+}
+
+.nosotrosss .imagen2 {
+  display: flex;
+}
+
+.nosotrosss .imagen2 .imagenfix {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .mequetrefe {
-    padding: 5px;
-  }
   #main_index {
     display: flex;
     flex-wrap: wrap;
@@ -949,57 +963,63 @@ nav ul li a {
     width: 768px;
     height: 500px;
   }
-  .container {
+  .mi_tiendita {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .div1 {
+  .mi_tiendita .col1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  .div2 {
+  .mi_tiendita .col2 {
     grid-area: 1 / 2 / 2 / 3;
   }
-  .div3 {
+  .mi_tiendita .col3 {
     grid-area: 2 / 1 / 3 / 2;
   }
-  .div4 {
+  .mi_tiendita .col4 {
     grid-area: 2 / 2 / 3 / 3;
   }
-  .div5 {
+  .mi_tiendita .col5 {
     grid-area: 3 / 1 / 4 / 2;
   }
-  .div6 {
+  .mi_tiendita .col6 {
     grid-area: 3 / 2 / 4 / 3;
   }
-  .div7 {
+  .mi_tiendita .col7 {
     grid-area: 4 / 1 / 5 / 2;
   }
-  .div8 {
+  .mi_tiendita .col8 {
     grid-area: 4 / 2 / 5 / 3;
   }
-  .div9 {
+  .mi_tiendita .col9 {
     grid-area: 5 / 1 / 6 / 2;
   }
-  .div10 {
+  .mi_tiendita .col10 {
     grid-area: 5 / 2 / 6 / 3;
   }
-  .div11 {
+  .mi_tiendita .col11 {
     grid-area: 6 / 1 / 7 / 2;
   }
-  .div12 {
+  .mi_tiendita .col12 {
     grid-area: 6 / 2 / 7 / 3;
   }
-  .tien_img {
+  .mi_tiendita .tien_img {
     width: 200px;
     height: 300px;
+  }
+  .imagen2 {
+    display: flex;
+  }
+  .imagen2 .imagenfix {
+    width: auto;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 4000px) {
-  .container {
+  .mi_tiendita {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1042,9 +1062,32 @@ nav ul li a {
   .col12 {
     grid-area: 3 / 4 / 4 / 5;
   }
+  .tien_img {
+    width: 200px;
+    height: 300px;
+  }
 }
 
-.tien_img {
-  width: 200px;
-  height: 300px;
+.nosotrosss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotrosss .texto h2 {
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.nosotrosss .texto h6 {
+  font-size: 22px;
+}
+
+.nosotrosss .imagen2 {
+  display: flex;
+  margin: 50px;
+}
+
+.nosotrosss .imagen2 .imagenfix {
+  display: flex;
 }
