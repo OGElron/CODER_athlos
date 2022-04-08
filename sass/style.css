@@ -205,7 +205,6 @@ nav ul li a {
 
 .tiendita .col1 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -213,31 +212,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col1:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col1 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col1 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col1 .btn_compra {
@@ -264,7 +251,6 @@ nav ul li a {
 
 .tiendita .col2 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -272,31 +258,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col2:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col2 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col2 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col2 .btn_compra {
@@ -323,7 +297,6 @@ nav ul li a {
 
 .tiendita .col3 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -331,31 +304,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col3:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col3 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col3 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col3 .btn_compra {
@@ -382,7 +343,6 @@ nav ul li a {
 
 .tiendita .col4 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -390,31 +350,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col4:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col4 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col4 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col4 .btn_compra {
@@ -441,7 +389,6 @@ nav ul li a {
 
 .tiendita .col5 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -449,31 +396,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col5:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col5 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col5 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col5 .btn_compra {
@@ -500,7 +435,6 @@ nav ul li a {
 
 .tiendita .col6 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -508,31 +442,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col6:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col6 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col6 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col6 .btn_compra {
@@ -559,7 +481,6 @@ nav ul li a {
 
 .tiendita .col7 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -567,31 +488,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col7:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col7 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col7 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col7 .btn_compra {
@@ -618,7 +527,6 @@ nav ul li a {
 
 .tiendita .col8 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -626,31 +534,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col8:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col8 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col8 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col8 .btn_compra {
@@ -677,7 +573,6 @@ nav ul li a {
 
 .tiendita .col9 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -685,31 +580,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col9:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col9 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col9 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col9 .btn_compra {
@@ -736,7 +619,6 @@ nav ul li a {
 
 .tiendita .col10 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -744,31 +626,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col10:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col10 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col10 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col10 .btn_compra {
@@ -795,7 +665,6 @@ nav ul li a {
 
 .tiendita .col11 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -803,31 +672,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col11:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col11 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col11 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col11 .btn_compra {
@@ -854,7 +711,6 @@ nav ul li a {
 
 .tiendita .col12 {
   border: solid black 2px;
-  width: 20%;
   margin: 15px;
   box-sizing: border-box;
   float: left;
@@ -862,31 +718,19 @@ nav ul li a {
   border-radius: 20px;
   cursor: pointer;
   padding: 20px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
   background-color: #dadada;
 }
 
 .tiendita .col12:hover {
-  box-shadow: 0 3px 6px 0, 0, 0, 0.16, 0 3px 6px rgba 0, 0, 0, 0.23;
   transition: 2s;
   transform: scale(1.1, 1.1);
-}
-
-.tiendita .col12 .tien_img {
-  max-width: 100%;
-  max-height: 90%;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
 }
 
 .tiendita .col12 .oferta {
   color: #02105c;
   background-color: #db511a;
   border-radius: 90px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 .tiendita .col12 .btn_compra {
@@ -913,30 +757,26 @@ nav ul li a {
 
 .nosotrosss {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .nosotrosss .texto {
   box-shadow: 0 25px 35px rgba(0, 0, 0, 0.774);
   border: solid black 2px;
-  margin: 50px;
-  padding: 20px;
-  width: 50%;
-  background-color: rgba(255, 255, 255, 0.815);
+  margin: 3.125rem;
+  padding: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.712);
   text-align: justify;
 }
 
-.nosotrosss .texto .cuadro {
-  background-color: rgba(128, 128, 128, 0.534);
-  border: 1px solid black;
-  padding: 20px;
-  margin: 50px;
+.nosotrosss .texto .h6 {
+  font-size: 1rem;
 }
 
 .nosotrosss .imagen2 {
-  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.774);
-  border: solid black 5px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.363);
+  object-fit: contain;
+  text-align: center;
 }
 
 .mefetreque {
@@ -1090,6 +930,11 @@ nav ul li a {
   }
 }
 
+.tien_img {
+  width: 200px;
+  height: 300px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .mequetrefe {
     padding: 5px;
@@ -1101,7 +946,7 @@ nav ul li a {
     object-fit: scale-down;
   }
   .video {
-    width: 768px !important;
+    width: 768px;
     height: 500px;
   }
   .container {
@@ -1146,6 +991,10 @@ nav ul li a {
   }
   .div12 {
     grid-area: 6 / 2 / 7 / 3;
+  }
+  .tien_img {
+    width: 200px;
+    height: 300px;
   }
 }
 
@@ -1193,4 +1042,9 @@ nav ul li a {
   .col12 {
     grid-area: 3 / 4 / 4 / 5;
   }
+}
+
+.tien_img {
+  width: 200px;
+  height: 300px;
 }

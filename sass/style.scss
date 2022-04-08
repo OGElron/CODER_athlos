@@ -220,26 +220,22 @@ nav{
 
 .nosotrosss{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     .texto { 
         box-shadow: 0 25px 35px rgba(0, 0, 0, 0.774);
         border: solid black 2px;
-        margin: 50px;
-        padding: 20px;
-        width: 50%;
-        background-color: rgba(255, 255, 255, 0.815);
+        margin: 3.125rem;
+        padding: 1.25rem;
+        background-color: rgba(255, 255, 255, 0.712);
         text-align: justify;
-        .cuadro { 
-            background-color: rgba(128, 128, 128, 0.534);
-            border: 1px solid black;
-            padding: 20px;
-            margin: 50px;
+        .h6 {
+            font-size: 1rem;
         }
-    }
+        }
     .imagen2{
-        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.774);
-        border: solid black 5px;
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.363);
+        object-fit: contain;
+        text-align: center;
     }   
 }
 
@@ -368,6 +364,11 @@ nav {
     .div11 { grid-area: 11 / 1 / 12 / 2; }
     .div12 { grid-area: 12 / 1 / 13 / 2; }
 }
+.tien_img {
+    width: 200px;
+    height: 300px;
+}
+
 @media screen and (min-width: 768px) and (max-width:1200px) {
 .mequetrefe {
     padding: 5px;
@@ -379,7 +380,7 @@ nav {
     object-fit: scale-down;
     }
 .video {
-    width: 768px !important;
+    width: 768px;
     height: 500px;
     }
     .container {
@@ -402,7 +403,10 @@ nav {
         .div10 { grid-area: 5 / 2 / 6 / 3; }
         .div11 { grid-area: 6 / 1 / 7 / 2; }
         .div12 { grid-area: 6 / 2 / 7 / 3; }
-        
+.tien_img {
+    width: 200px;
+    height: 300px;
+}       
         
 }
 @media screen and (min-width: 1200px) and (max-width: 4000px) {
@@ -427,3 +431,7 @@ nav {
     .col11 { grid-area: 3 / 3 / 4 / 4; }
     .col12 { grid-area: 3 / 4 / 4 / 5; }
 }
+.tien_img {
+    width: 200px;
+    height: 300px;
+}       
